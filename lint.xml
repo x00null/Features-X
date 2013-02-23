@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="SelectableText">
+        <ignore path="res/layout/list_item.xml" />
+        <ignore path="res/layout/single_list_item_view.xml" />
+    </issue>
+</lint>

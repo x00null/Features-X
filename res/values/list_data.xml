@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="adobe_products">
+        <item>Add exit Menu on Stock Browser</item>
+    	<item>Enable camera shutter sound on/off</item>
+    	<item>Confirm Exit on browser</item>
+    	<item>Dialer search matches numbers</item>
+    	<item>Extend contact name length</item>
+    	<item>Extend speed dial to 100</item>
+        <item>Infinite scrolling on TwLauncher</item>
+        <item>Enter Key = new line on Stock sms</item>
+        <item>No limit Joining contacts togheter</item>
+        <item>Enable Sub-Symbols on Samsung Keyboard</item>
+        <item>Enable Scheduled Messages</item>
+        <item>BACKUP FEATURE.XML OR OTHERS.XML</item>
+        <item>RESTORE BACKUP</item>
+        <item>REBOOT</item>
+    </string-array>
+</resources>
