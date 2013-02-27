@@ -15,5 +15,6 @@
         <item>BACKUP FEATURE.XML OR OTHERS.XML</item>
         <item>RESTORE BACKUP</item>
         <item>REBOOT</item>
+        <item>INSERT A FEATURE MANUALLY ----></item>
     </string-array>
 </resources>

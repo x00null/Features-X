@@ -1,0 +1,14 @@
+#! /system/bin/sh
+
+
+if [ -f /system/csc/feature.xml ];
+then
+
+  	awk '{print}' /data/data/com.imu24r.featuresx/files/dinamic.txt >> /system/csc/feature.xml
+else
+
+   	awk echo "<FeatureSet>'{print}'</FeatureSet>" /data/data/com.imu24r.featuresx/files/dinamic.txt >> /system/csc/others.xml
+
+fi
+   
+  

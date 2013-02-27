@@ -5,8 +5,6 @@ import java.io.InputStream;
 import java.io.OutputStreamWriter;
 import java.util.concurrent.TimeoutException;
 
-
-
 import com.stericson.RootTools.RootTools;
 import com.stericson.RootTools.exceptions.RootDeniedException;
 import com.stericson.RootTools.execution.CommandCapture;
@@ -14,6 +12,7 @@ import com.stericson.RootTools.execution.CommandCapture;
 
 import android.app.ListActivity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -24,9 +23,15 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 public class MainActivity extends ListActivity {
-    @Override
+   
+	public static String EXTRA_MESSAGE;
+
+	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        
+        final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
+        
         
         InputStream input2 = null;
 		try {
@@ -643,7 +648,8 @@ public class MainActivity extends ListActivity {
           public void onItemClick(AdapterView<?> parent, View view,
               int position, long id) {
         	  
-        	 
+        	  Intent intent = new Intent(MainActivity.this, DisplayMessageActivity.class);
+    		  
         	  
         	  if(position==0){
         		  CommandCapture command = new CommandCapture(0,"mount -o rw,remount /dev/block/stl9 /system","chmod 700 /data/data/com.imu24r.featuresx/files/addexitmenubrow.sh","sh /data/data/com.imu24r.featuresx/files/addexitmenubrow.sh","mount -o ro,remount /dev/block/stl9 /system");
@@ -921,7 +927,7 @@ public class MainActivity extends ListActivity {
 					e.printStackTrace();
 				}
         		  
-        	  }else{
+        	  }else if(position==13){
         		  
         		  CommandCapture command = new CommandCapture(0,"mount -o rw,remount /dev/block/stl9 /system","reboot","mount -o ro,remount /dev/block/stl9 /system");
         	 	  try {
@@ -939,7 +945,11 @@ public class MainActivity extends ListActivity {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
+        	  
+        	  }else{
         		  
+        		  startActivity(intent);
+        	  
         	  }
         	  	  
         	  

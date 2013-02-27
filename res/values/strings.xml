@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="hello">Just Touch the feature you want and reboot! enjoy!</string>
     <string name="app_name">Features X</string>
     <string name="action_settings"></string>
     <string name="button_send">Reboot</string>
+    <string name="hola">Hello</string>
+    <string name="singlelist">My Message</string>
+    <string name="title_activity_display_message">Insert Features Manually</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="med">This section is made for you to use the codes you want to insert just copy them and paste them here and touch the button then give it superuser permissions make sure the codes are complete with their xml tags. WARNING NOT ALL CODES HAVE BEEN TESTED</string>
+	<string name="button_send_1">WARNING!! Mod xml File!!</string>
+	<string name="button_send_2">View all the codes available</string>
+	<string name="lblf">Paste Code Here</string>
 </resources>
